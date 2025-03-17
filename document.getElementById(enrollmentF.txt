@@ -1,0 +1,17 @@
+document.getElementById("enrollmentForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const plan = document.getElementById("plan").value;
+
+    const response = await fetch("https://your-api-url.onrender.com/enroll", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, plan })
+    });
+
+    const result = await response.json();
+    document.getElementById("message").textContent = result.message;
+});

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundingKart - Get Funded for Trading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FundingKart</h1>
+        <p>India’s First SEBI-Compliant Funded Trading Platform</p>
+    </header>
+
+    <section class="container">
+        <h2>Apply for a Funded Trading Account</h2>
+        <form id="enrollmentForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <select id="plan" required>
+                <option value="">Select Plan</option>
+                <option value="₹50,000 Plan">₹50,000 Plan</option>
+                <option value="₹1,00,000 Plan">₹1,00,000 Plan</option>
+            </select>
+            <button type="submit">Enroll Now</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
